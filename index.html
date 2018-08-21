@@ -146,16 +146,24 @@
       <h2 class="visually-hidden">Наши работы</h2>
       <ul class="works-list">
         <li>
-          <img src="img/logo-1.png" width="199" height="68" alt="Логотип «HTML Academy»">
+          <a href="#">
+            <img src="img/logo-1.png" width="199" height="68" alt="Логотип «HTML Academy»">
+          </a>
         </li>
         <li>
-          <img src="img/logo-2.png" width="209" height="90" alt="Логотип «Барбершоп Borodinski»">
+          <a href="#">
+            <img src="img/logo-2.png" width="209" height="90" alt="Логотип «Барбершоп Borodinski»">
+          </a>
         </li>
         <li>
-          <img src="img/logo-3.png" width="185" height="52" alt="Логотип «PINK»">
+          <a href="#">
+            <img src="img/logo-3.png" width="185" height="52" alt="Логотип «PINK»">
+          </a>
         </li>
         <li>
-          <img src="img/logo-4.png" width="173" height="84" alt="Логотип «MISHKA»">
+          <a href="#">
+            <img src="img/logo-4.png" width="173" height="84" alt="Логотип «MISHKA»">
+          </a>
         </li>
       </ul>
     </section>
@@ -164,11 +172,6 @@
   <footer class="main-footer">
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts-map">
-        <a href="#">
-          <img src="img/map.jpg" width="1440" height="416" alt="Карта">
-        </a>
-      </div>
       <div class="contacts-address">
         <h3>Nёrds design studio</h3>
         <p>
@@ -178,6 +181,11 @@
         </p>
         <p>тел. +7(812)275-75-75</p>
         <a href="#" class="btn">Напишите нам</a>
+      </div>
+      <div class="contacts-map">
+        <a href="#">
+          <img src="img/map.jpg" width="1440" height="416" alt="Карта">
+        </a>
       </div>
     </section>
 
@@ -206,7 +214,22 @@
 
   <section class="modal">
     <h2>Напишите нам</h2>
-    <!-- форма -->
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="write-us-item">
+        <label for="write-us-name">Ваше имя:</label>
+        <input type="text" name="name" id="write-us-name" placeholder="Имя Фамилия">
+      </p>
+      <p class="write-us-item">
+        <label for="write-us-email">Ваш e-mail:</label>
+        <input type="text" name="email" id="write-us-email" placeholder="email@example.com">
+      </p>
+      <p class="write-us-item">
+        <label for="write-us-text">Текст письма:</label>
+        <textarea name="text" id="write-us-text" cols="30" rows="5" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>
 
